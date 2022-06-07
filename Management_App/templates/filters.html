@@ -1,0 +1,15 @@
+{% extends "base.html"  %}
+
+{% block title %} {%  endblock %}
+
+
+{% block content %}
+<form class="container"  method="post" action="">
+
+    {% csrf_token %}
+
+    <input type="search" style="text-align:center;  margin-left:180px; margin-top:50px;" placeholder="search here" name='name' " >
+
+</form>
+
+{%  endblock %}

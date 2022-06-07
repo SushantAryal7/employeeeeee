@@ -1,0 +1,22 @@
+{% extends "base.html"  %}
+
+{% block title %} {%  endblock %}
+
+
+{% block content %} <div1>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      {% for employee in employees  %}
+    <li><a class="dropdown-item" href="/remove/{{employee.id}}">{{employee.name }}  :{{ employee.designation}}</a></li>
+        {% endfor %}
+  </ul>
+</div>
+
+
+
+
+
+</div1> {%  endblock %}
